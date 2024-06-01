@@ -13,7 +13,7 @@ from sqlalchemy_ingres.base import IngresDialect
 from sqlalchemy_ingres.base import sqlalchemy_version_tuple
 
 try:
-    ModuleNotFoundError  # Python 3 sanity check
+    raise ModuleNotFoundError  # Python 3 sanity check
 except NameError:
     # Python 2.7
     ModuleNotFoundError = ImportError
